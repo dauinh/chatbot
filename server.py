@@ -5,7 +5,7 @@ import time
 hostName = "localhost"
 serverPort = 8080
 
-with open('home.html', 'r') as file:
+with open('index.html', 'r') as file:
     html_string = file.read()
 
 class MyServer(BaseHTTPRequestHandler):
