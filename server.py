@@ -9,6 +9,10 @@ class MyServer(BaseHTTPRequestHandler):
     def do_GET(self):
         # Get the file path from the request URL
         file_path = self.path[1:]  # Remove the leading slash
+        
+        # If the file path is empty or refers to the favicon.ico file, serve the index.html file instead
+        if not file_path or file_path == "favicon.ico":
+            file_path = "index.html"
 
         # Determine the file extension
         file_extension = file_path.split('.')[-1].lower()
