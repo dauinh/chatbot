@@ -1,0 +1,19 @@
+/* Styles for the chatbot container */
+.chatbot-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Styles for the chat messages */
+.chat-message {
+    background-color: #f1f1f1;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+/* Styles for the user input area */
+.user-input {
+    margin-top: 10px;
+}
