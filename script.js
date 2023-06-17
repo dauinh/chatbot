@@ -48,13 +48,14 @@ function createChatMessageElement(profile, messageText) {
 }
 
 function addMessageToContainer(container, message) {
+    var profilePic = document.createElement("img");
     if (container.classList.contains("bot-message")) {
-        var botProfile = document.createElement("img");
-        container.appendChild(botProfile);
+        profilePic.src = "public/bot.png";
+        container.appendChild(profilePic);
         container.appendChild(message);
     } else if (container.classList.contains("user-message")) {
+        profilePic.src = "public/me.jpg";
         container.appendChild(message);
-        var userProfile = document.createElement("img");
-        container.appendChild(userProfile);
+        container.appendChild(profilePic);
     }
 }

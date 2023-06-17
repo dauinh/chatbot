@@ -4,6 +4,10 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+p {
+    margin: 0;
+}
+
 /* Styles for the chatbot container */
 .chatbot-container {
     display: flex;
@@ -24,22 +28,34 @@ body {
 .message-container {
     margin-bottom: 1rem;
     border-radius: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.message-container img {
+    width: 2rem;
 }
 
 .chat-message {
     padding: 1rem;
 }
-
-.profile {
-    width: 5rem;
-}
   
 .bot-message {
     background-color: #dedcdc;
 }
+
+.bot-message img {
+    padding-left: 0.5rem;
+}
   
 .user-message {
     background-color: #cbf9df;
+    justify-content: flex-end;
+}
+
+.user-message img {
+    padding-right: 0.5rem;
 }
 
 .user-input {
