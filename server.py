@@ -25,7 +25,7 @@ class MyServer(BaseHTTPRequestHandler):
             content_type = "text/html"
         elif file_extension == "css":
             content_type = "text/css"
-        elif file_extension == "js":
+        elif file_extension in ["js", "ts"]:
             content_type = "application/javascript"
 
         # Set the response headers
